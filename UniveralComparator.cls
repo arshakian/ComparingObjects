@@ -1,4 +1,4 @@
-public class Comparing { 
+public class UniversalComparator { 
 	public static Integer Compare(Object firstItem, Object secondItem){
 		try{
 			Decimal d1 = Decimal.ValueOf(String.valueOf(firstItem));
@@ -11,7 +11,7 @@ public class Comparing {
 				return -1;
 			}
 		} catch(Exception e) {
-			String error_message = 'Sorry! You can`t to compare this obgects';
+			String error_message = 'Sorry! You can`t compare this obgects';
 			e.setMessage(error_message);
 			throw e;
 		}
